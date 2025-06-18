@@ -27,4 +27,8 @@ const nextConfig: NextConfig = {
   },
 };
 
+module.exports = {
+  assetPrefix: isProduction ? '/riderly-landing/' : '',
+};
+
 export default nextConfig;
