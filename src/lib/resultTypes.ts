@@ -17,7 +17,7 @@ export const resultTypes: Record<string, ResultInfo> = {
       '사전 계획과 장비 준비 철저',
       '혼자서도 전략적으로 움직임',
     ],
-    image: '/result/1.png',
+    image: './result/1.png',
   },
   '0001': {
     name: '침묵의 마스터',
@@ -27,7 +27,7 @@ export const resultTypes: Record<string, ResultInfo> = {
       '루트와 시간 관리에 강함',
       '혼라이딩에 완전히 몰입',
     ],
-    image: '/result/2.png',
+    image: './result/2.png',
   },
   '0010': {
     name: '자유로운 스피릿',
@@ -37,7 +37,7 @@ export const resultTypes: Record<string, ResultInfo> = {
       '속도와 와인딩을 즐김',
       '새로운 사람과 금방 친해짐',
     ],
-    image: '/result/3.png',
+    image: './result/3.png',
   },
   '0011': {
     name: '고독한 방랑자',
@@ -47,7 +47,7 @@ export const resultTypes: Record<string, ResultInfo> = {
       '예고 없는 출발과 복귀',
       '조용하지만 에너지 있는 스타일',
     ],
-    image: '/result/4.png',
+    image: './result/4.png',
   },
   '0100': {
     name: '정밀 타격 리더',
@@ -57,7 +57,7 @@ export const resultTypes: Record<string, ResultInfo> = {
       '무전기 등 장비 활용 능숙',
       '흐름 유지에 민감한 성향',
     ],
-    image: '/result/5.png',
+    image: './result/5.png',
   },
   '0101': {
     name: '질주의 선봉장',
@@ -67,7 +67,7 @@ export const resultTypes: Record<string, ResultInfo> = {
       '루트, 타임테이블 완벽 준비',
       '고속 그룹 라이딩을 선호',
     ],
-    image: '/result/6.png',
+    image: './result/6.png',
   },
   '0110': {
     name: '스파크 메이커',
@@ -77,7 +77,7 @@ export const resultTypes: Record<string, ResultInfo> = {
       '빠른 주행과 활발한 소통',
       '단체 분위기를 띄우는 에너지 담당',
     ],
-    image: '/result/7.png',
+    image: './result/7.png',
   },
   '0111': {
     name: '바람을 가르는 추격자',
@@ -87,7 +87,7 @@ export const resultTypes: Record<string, ResultInfo> = {
       '예측 불가한 출발과 코스',
       '빠르지만 존재감 낮은 스텔스형',
     ],
-    image: '/result/8.png',
+    image: './result/8.png',
   },
   '1000': {
     name: '루트 마스터',
@@ -97,7 +97,7 @@ export const resultTypes: Record<string, ResultInfo> = {
       '투어 루트를 꼼꼼히 설계',
       '단체 주행 시 배려심 깊은 스타일',
     ],
-    image: '/result/9.png',
+    image: './result/9.png',
   },
   '1001': {
     name: '풍경 감상가',
@@ -107,7 +107,7 @@ export const resultTypes: Record<string, ResultInfo> = {
       '감성적이고 사색적인 주행',
       '조용한 분위기를 선호',
     ],
-    image: '/result/10.png',
+    image: './result/10.png',
   },
   '1010': {
     name: '감성 유랑객',
@@ -117,7 +117,7 @@ export const resultTypes: Record<string, ResultInfo> = {
       '함께 타는 사람과 소통 중시',
       '감성을 나누는 따뜻한 스타일',
     ],
-    image: '/result/11.png',
+    image: './result/11.png',
   },
   '1011': {
     name: '길 위의 철학자',
@@ -127,7 +127,7 @@ export const resultTypes: Record<string, ResultInfo> = {
       '감성적이고 즉흥적인 여정 선호',
       '말 없이 풍경과 교감',
     ],
-    image: '/result/12.png',
+    image: './result/12.png',
   },
   '1100': {
     name: '다양한 길잡이',
@@ -137,7 +137,7 @@ export const resultTypes: Record<string, ResultInfo> = {
       '팀워크와 커뮤니케이션 중시',
       '모두를 잘 챙기는 리더 스타일',
     ],
-    image: '/result/13.png',
+    image: './result/13.png',
   },
   '1101': {
     name: '로드 매니저',
@@ -147,7 +147,7 @@ export const resultTypes: Record<string, ResultInfo> = {
       '여유로운 주행 스타일',
       '조용히 팀을 지원하는 조율자',
     ],
-    image: '/result/14.png',
+    image: './result/14.png',
   },
   '1110': {
     name: '유쾌한 탐험대장',
@@ -157,7 +157,7 @@ export const resultTypes: Record<string, ResultInfo> = {
       '모두와 친해지고 분위기를 띄움',
       '즐거운 라이딩을 함께 만들기',
     ],
-    image: '/result/15.png',
+    image: './result/15.png',
   },
   '1111': {
     name: '평화로운 동행자',
@@ -167,6 +167,6 @@ export const resultTypes: Record<string, ResultInfo> = {
       '단체 속에서도 조용한 성향',
       '분위기에 자연스럽게 녹아듦',
     ],
-    image: '/result/16.png',
+    image: './result/16.png',
   },
 };
