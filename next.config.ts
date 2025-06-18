@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
   compiler: {
     styledComponents: true,
   },
+  assetPrefix: isProduction ? '/riderly-mbti/' : '',
   images: {
     localPatterns: [
       {
