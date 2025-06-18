@@ -3,9 +3,9 @@ import type { NextConfig } from "next";
 const isProduction = process.env.NODE_ENV === 'production';
 
 const nextConfig: NextConfig = {
-  /* config options here */
   output: 'export',
   basePath: isProduction ? '/riderly-mbti' : '',
+  assetPrefix: isProduction ? '/riderly-mbti/' : '',
   compiler: {
     styledComponents: true,
   },
@@ -18,17 +18,12 @@ const nextConfig: NextConfig = {
     ],
     unoptimized: true,
   },
-  assetPrefix: isProduction ? '/riderly-mbti' : '',
   typescript: {
-    ignoreBuildErrors: true, // ✅ 타입 에러 무시하고 빌드
+    ignoreBuildErrors: true,
   },
   eslint: {
-    ignoreDuringBuilds: true, // ✅ ESLint 에러 무시하고 빌드
+    ignoreDuringBuilds: true,
   },
-};
-
-module.exports = {
-  assetPrefix: isProduction ? '/riderly-landing/' : '',
 };
 
 export default nextConfig;
