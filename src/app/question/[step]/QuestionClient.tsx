@@ -57,7 +57,7 @@ export default function QuestionClient({ step, question }) {
             </OptionsWrap>
           </div>
           <Logo>
-            <img src="/logo.png" alt="Riderly Logo" />
+            <img src="/riderly-mbti/logo.png" alt="Riderly Logo" />
             RIDERLY
           </Logo>
         </Card>
