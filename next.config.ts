@@ -6,10 +6,10 @@ const nextConfig: NextConfig = {
   /* config options here */
   output: 'export',
   basePath: isProduction ? '/riderly-mbti' : '',
+  assetPrefix: isProduction ? '/riderly-mbti' : '',
   compiler: {
     styledComponents: true,
   },
-  assetPrefix: isProduction ? '/riderly-mbti/' : '',
   images: {
     localPatterns: [
       {
