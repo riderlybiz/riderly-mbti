@@ -1,6 +1,7 @@
 // app/result/[type]/page.tsx
 import Result from '@/app/result/page';
 import type { Metadata } from 'next'
+import { resultTypes } from '@/lib/resultTypes';
 
 export const dynamicParams = false;
 
@@ -26,8 +27,6 @@ export async function generateStaticParams() {
     ];
 }
 
-import { resultTypes } from '@/lib/resultTypes';
-
 export async function generateMetadata({ params }: { params: { type: string } }): Promise<Metadata> {
     const type = params.type;
     const data = resultTypes[type];
@@ -42,7 +41,7 @@ export async function generateMetadata({ params }: { params: { type: string } })
             siteName: "Riderly",
             images: [
                 {
-                    url: data.ogThumbnailImage,
+                    url: `https://riderlybiz.github.io/riderly-mbti/result/share/${data.ogThumbnailImage}`,
                     width: 1200,
                     height: 630,
                     alt: "Riderly OG Image",
