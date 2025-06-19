@@ -1,28 +1,28 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import { MainWrap } from "../styles/MainStyled";
 import { Bg, Card, Title, SubTitle, ImageWrap, StyledImg, StartButton, Logo } from "../styles/MainStyled";
 
 export const metadata: Metadata = {
-  title: "나는 어떤 동물 라이더일까?",
-  description: "라이더 유형 검사 powered by Riderly",
-  openGraph: {
     title: "나는 어떤 동물 라이더일까?",
     description: "라이더 유형 검사 powered by Riderly",
-    url: "https://riderlybiz.github.io/riderly-mbti/",
-    siteName: "Riderly",
-    images: [
-      {
-        url: "https://riderlybiz.github.io/riderly-mbti/images/open_graph_thumnail.png",
-        width: 1200,
-        height: 600,
-        alt: "Riderly OG Image",
-      },
-    ],
-    type: "website",
-  }
+    openGraph: {
+        title: "나는 어떤 동물 라이더일까?",
+        description: "라이더 유형 검사 powered by Riderly",
+        url: "https://riderlybiz.github.io/riderly-mbti/",
+        siteName: "Riderly",
+        images: [
+            {
+                url: "https://riderlybiz.github.io/riderly-mbti/images/open_graph_thumnail.png",
+                width: 1200,
+                height: 600,
+                alt: "Riderly OG Image",
+            },
+        ],
+        type: "website",
+    }
 };
 
 export const Main = () => {
@@ -38,11 +38,11 @@ export const Main = () => {
                         <StyledImg src="/riderly-mbti/images/main_thumbnail.png" alt="동물 라이더 일러스트" />
                     </ImageWrap>
                     <StartButton onClick={() => router.push('/question/0')}>테스트 시작하기</StartButton>
-                    <Logo>
-                        <img src="/riderly-mbti/logo.png" alt="Riderly Logo" />
-                        RIDERLY
-                    </Logo>
                 </Card>
+                <Logo>
+                    <img src="/riderly-mbti/logo.png" alt="Riderly Logo" />
+                    RIDERLY
+                </Logo>
             </Bg>
         </MainWrap>
     )

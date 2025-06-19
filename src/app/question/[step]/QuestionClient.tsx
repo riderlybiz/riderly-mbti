@@ -55,11 +55,11 @@ export default function QuestionClient({ step, question }) {
               ))}
             </OptionsWrap>
           </div>
-          <Logo>
-            <img src="/riderly-mbti/logo.png" alt="Riderly Logo" />
-            RIDERLY
-          </Logo>
         </Card>
+        <Logo>
+          <img src="/riderly-mbti/logo.png" alt="Riderly Logo" />
+          RIDERLY
+        </Logo>
       </Bg>
     </QuestionWrap>
   );

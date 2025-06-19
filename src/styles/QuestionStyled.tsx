@@ -24,7 +24,7 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px 16px 32px 16px;
+  padding: 120px 16px 120px 16px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.1);
   position: relative;
 `;

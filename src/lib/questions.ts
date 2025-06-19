@@ -46,12 +46,12 @@ export const questions: Question[] = [
     question: '그룹 라이딩 참여 빈도는?',
     options: [
       {
-        text: '거의 참여 하지 않는다 / 1년에 3회 이하 수준',
+        text: '거의 참여 하지 않는다 /\n 1년에 3회 이하 수준',
         axis: 'S',
         score: +1,
       },
       {
-        text: '대부분 그룹 라이딩 한다 / 기회만 있으면 참여하려고 한다',
+        text: '대부분 그룹 라이딩 한다 /\n 기회만 있으면 참여하려고 한다',
         axis: 'G',
         score: +1,
       },
@@ -75,7 +75,7 @@ export const questions: Question[] = [
     question: '라이딩 투어가 끝난 후 나는…',
     options: [
       {
-        text: '사람들과 식사, 티타임을 가지며 후기를 나눈다',
+        text: '사람들과 식사, 티타임을 \n가지며 후기를 나눈다',
         axis: 'C',
         score: +1,
       },
@@ -110,7 +110,7 @@ export const questions: Question[] = [
   {
     question: '라이딩 중 소통 방식은?',
     options: [
-      { text: '인터콤이나 음성통화를 사용해 실시간으로 소통한다', axis: 'C', score: +1 },
+      { text: '인터콤이나 음성통화를 사용해 \n실시간으로 소통한다', axis: 'C', score: +1 },
       { text: '굳이 말하지 않아도 맞춰 간다', axis: 'L', score: +1 },
     ],
   },
