@@ -4,7 +4,6 @@ import { questions } from '@/lib/questions';
 import QuestionClient from './QuestionClient';
 import { Metadata } from "next";
 
-
 export const metadata: Metadata = {
   title: "나는 어떤 동물 라이더일까?",
   description: "라이더 유형 검사 powered by Riderly",
