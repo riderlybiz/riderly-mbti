@@ -1,6 +1,6 @@
 // app/result/[type]/page.tsx
 import Result from '@/app/result/page';
-import type { Metadata } from 'next'
+import { Metadata } from 'next';
 import { resultTypes } from '@/lib/resultTypes';
 
 export const dynamicParams = false;
