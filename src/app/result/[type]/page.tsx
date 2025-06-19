@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: { params: { type: string } })
             siteName: "Riderly",
             images: [
                 {
-                    url: `https://riderlybiz.github.io/riderly-mbti/result/share/${data.ogThumbnailImage}`,
+                    url: `https://riderlybiz.github.io${data.ogThumbnailImage}`,
                     width: 1200,
                     height: 630,
                     alt: "Riderly OG Image",
