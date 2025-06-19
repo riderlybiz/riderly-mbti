@@ -17,7 +17,7 @@ export const Bg = styled.div`
 export const Card = styled.div`
   width: 100%;
   max-width: 400px;
-  height: 850px;
+  height: 750px;
   margin-top: 32px;
   border-radius: 40px;
   background: #fff;
@@ -148,7 +148,7 @@ export const OptionBtn = styled.button`
 `;
 
 export const Logo = styled.div`
-  margin-top: 32px;
+  margin-top: 10px;
   width: 100%;
   display: flex;
   justify-content: center;

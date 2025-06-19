@@ -157,7 +157,7 @@ export const ShareButton = styled.button`
 `;
 
 export const Logo = styled.div`
-  margin-top: 32px;
+  margin-top: 10px;
   width: 100%;
   display: flex;
   justify-content: center;
