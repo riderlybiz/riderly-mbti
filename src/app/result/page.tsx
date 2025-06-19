@@ -26,17 +26,23 @@ import { doc, setDoc } from 'firebase/firestore'
 import { db } from '@/lib/firebase'
 
 
-export default function Result() {
+export default function Result({ type }: { type: string }) {
   const router = useRouter();
   const answers = useAnswerStore((s) => s.answers);
-  const resultKey = calculateResult(answers);
+  const resultKey = type ?? calculateResult(answers);
   const result = resultTypes[resultKey];
   const onGoToRiderlyLanding = async () => {
     window.location.href = `https://riderlybiz.github.io/riderly-landing/mbti`
   };
   const onShare = async () => {
     try {
-      await navigator.clipboard.writeText('https://riderlybiz.github.io/riderly-mbti');
+      await navigator.clipboard.writeText(
+        '동물로 알아보는 나의 바이크 성향!' + '\n' +
+        '나는 ‘' + result.name + '’ 나왔어' + '\n' +
+        '너는 어떤 유형일지 궁금해' + '\n' +
+        '\n' +
+        'https://riderlybiz.github.io/riderly-mbti/result/' + resultKey
+      );
       alert('링크가 복사되었습니다!');
     } catch (err) {
       console.error('클립보드 복사 실패:', err);

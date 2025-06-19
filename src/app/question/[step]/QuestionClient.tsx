@@ -7,7 +7,6 @@ import {
   QuestionWrap,
   Bg,
   Card,
-  Title,
   ProgressBarWrap,
   PrevBtn,
   ProgressBarOuter,
