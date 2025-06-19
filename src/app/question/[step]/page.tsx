@@ -1,8 +1,9 @@
 // app/question/[step]/page.tsx
 
 import { questions } from '@/lib/questions';
-import { Metadata } from "next";
 import QuestionClient from './QuestionClient';
+import { Metadata } from "next";
+
 
 export const metadata: Metadata = {
   title: "나는 어떤 동물 라이더일까?",
