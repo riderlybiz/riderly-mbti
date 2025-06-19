@@ -6,7 +6,7 @@ export async function generateMetadata({ params }: { params: { type: string } })
     const type = params.type;
     const data = resultTypes[type];
 
-    return type ? {
+    return type !== '' ? {
         title: "나는 어떤 동물 라이더일까?",
         description: "라이더 유형 검사",
         openGraph: {
