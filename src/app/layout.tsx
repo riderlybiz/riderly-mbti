@@ -12,8 +12,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <GoogleAnalytics gaId="G-9RS5PVKLKX"/>
       <body className={notoSansKr.className} style={{ overflow: "hidden" }}>
-        <GoogleAnalytics gaId="G-BCHDZ3EDCE"/>
         <StyledComponentsRegistry>
           {children}
         </StyledComponentsRegistry>

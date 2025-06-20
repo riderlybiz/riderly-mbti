@@ -22,9 +22,6 @@ import {
   Divider,
   Logo
 } from '@/styles/ResultStyled';
-import { doc, setDoc } from 'firebase/firestore'
-import { db } from '@/lib/firebase'
-
 
 export default function Result({ type }: { type: string }) {
   const router = useRouter();
