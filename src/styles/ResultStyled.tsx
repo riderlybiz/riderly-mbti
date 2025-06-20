@@ -72,6 +72,7 @@ export const Desc = styled.div`
   font-weight: 500;
   margin-bottom: 18px;
   text-align: center;
+  white-space: pre-line
 `;
 
 export const FeatureList = styled.ul`
