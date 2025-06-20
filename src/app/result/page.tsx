@@ -22,6 +22,33 @@ import {
   Divider,
   Logo
 } from '@/styles/ResultStyled';
+import { doc, setDoc } from 'firebase/firestore'
+import { db } from '@/lib/firebase'
+import { v4 as uuidv4 } from 'uuid';
+
+const getUserId = () => {
+  const stored = localStorage.getItem('riderlyUserId');
+  if (stored) return stored;
+
+  const newId = uuidv4();
+  localStorage.setItem('riderlyUserId', newId);
+  return newId;
+};
+
+const saveResult = async (answers, resultKey) => {
+  try {
+    await setDoc(doc(db, 'mbtiResults', getUserId()), {
+      resultKey: resultKey,
+      answers: answers.map(ans => ({
+        axis: ans.axis,
+        score: ans.score
+      })),
+      timestamp: new Date()
+    });
+  } catch (err: unknown) {
+    console.error("Error adding document: ", err);
+  }
+};
 
 export default function Result({ type }: { type: string }) {
   const router = useRouter();
@@ -47,6 +74,21 @@ export default function Result({ type }: { type: string }) {
     }
   };
 
+  const onDownloadImage = () => {
+    const imageUrl = result.downloadImage;
+    const link = document.createElement('a');
+    link.href = imageUrl;
+    link.download = `${result.name}_Riderly.png`; // 저장될 파일명
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  // type이 없으면 결과 저장
+  if (!type) {
+    saveResult(answers, resultKey);
+  }
+
   return (
     <ResultWrap>
       <Bg>
@@ -66,6 +108,7 @@ export default function Result({ type }: { type: string }) {
             <MainButton onClick={onGoToRiderlyLanding}>나와 잘 맞는 라이더 보러 가기</MainButton>
             <Divider />
             <SubButton onClick={() => router.push('/')}>다시 시작하기</SubButton>
+            <ShareButton onClick={onDownloadImage}>내 결과 저장하기</ShareButton>
             <ShareButton onClick={onShare}>친구에게 공유하기</ShareButton>
           </Content>
         </Card>

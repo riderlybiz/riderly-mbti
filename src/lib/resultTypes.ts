@@ -6,6 +6,7 @@ type ResultInfo = {
   bullets: string[];
   image: string;
   ogThumbnailImage: string;
+  downloadImage: string;
 };
 
 // 4자리 이진값: V/T, S/G, P/I, C/L (앞에서부터 차례대로)
@@ -19,7 +20,8 @@ export const resultTypes: Record<string, ResultInfo> = {
       '혼자서도 전략적으로 움직임',
     ],
     image: '/riderly-mbti/result/1.png',
-    ogThumbnailImage: '/riderly-mbti/result/share/1.png'
+    ogThumbnailImage: '/riderly-mbti/result/share/1.png',
+    downloadImage: '/riderly-mbti/result/download/1.png'
   },
   '0001': {
     name: '침묵의 마스터',
@@ -30,7 +32,8 @@ export const resultTypes: Record<string, ResultInfo> = {
       '혼라이딩에 완전히 몰입',
     ],
     image: '/riderly-mbti/result/2.png',
-    ogThumbnailImage: '/riderly-mbti/result/share/2.png'
+    ogThumbnailImage: '/riderly-mbti/result/share/2.png',
+    downloadImage: '/riderly-mbti/result/download/2.png'
   },
   '0010': {
     name: '자유로운 스피릿',
@@ -41,7 +44,8 @@ export const resultTypes: Record<string, ResultInfo> = {
       '새로운 사람과 금방 친해짐',
     ],
     image: '/riderly-mbti/result/3.png',
-    ogThumbnailImage: '/riderly-mbti/result/share/3.png'
+    ogThumbnailImage: '/riderly-mbti/result/share/3.png',
+    downloadImage: '/riderly-mbti/result/download/3.png'
   },
   '0011': {
     name: '고독한 방랑자',
@@ -52,7 +56,8 @@ export const resultTypes: Record<string, ResultInfo> = {
       '조용하지만 에너지 있는 스타일',
     ],
     image: '/riderly-mbti/result/4.png',
-    ogThumbnailImage: '/riderly-mbti/result/share/4.png'
+    ogThumbnailImage: '/riderly-mbti/result/share/4.png',
+    downloadImage: '/riderly-mbti/result/download/4.png'
   },
   '0100': {
     name: '정밀 타격 리더',
@@ -63,7 +68,8 @@ export const resultTypes: Record<string, ResultInfo> = {
       '흐름 유지에 민감한 성향',
     ],
     image: '/riderly-mbti/result/5.png',
-    ogThumbnailImage: '/riderly-mbti/result/share/5.png'
+    ogThumbnailImage: '/riderly-mbti/result/share/5.png',
+    downloadImage: '/riderly-mbti/result/download/5.png'
   },
   '0101': {
     name: '질주의 선봉장',
@@ -74,7 +80,8 @@ export const resultTypes: Record<string, ResultInfo> = {
       '고속 그룹 라이딩을 선호',
     ],
     image: '/riderly-mbti/result/6.png',
-    ogThumbnailImage: '/riderly-mbti/result/share/6.png'
+    ogThumbnailImage: '/riderly-mbti/result/share/6.png',
+    downloadImage: '/riderly-mbti/result/download/6.png'
   },
   '0110': {
     name: '스파크 메이커',
@@ -85,7 +92,8 @@ export const resultTypes: Record<string, ResultInfo> = {
       '단체 분위기를 띄우는 에너지 담당',
     ],
     image: '/riderly-mbti/result/7.png',
-    ogThumbnailImage: '/riderly-mbti/result/share/7.png'
+    ogThumbnailImage: '/riderly-mbti/result/share/7.png',
+     downloadImage: '/riderly-mbti/result/download/7.png'
   },
   '0111': {
     name: '바람을 가르는 추격자',
@@ -96,7 +104,8 @@ export const resultTypes: Record<string, ResultInfo> = {
       '빠르지만 존재감 낮은 스텔스형',
     ],
     image: '/riderly-mbti/result/8.png',
-    ogThumbnailImage: '/riderly-mbti/result/share/8.png'
+    ogThumbnailImage: '/riderly-mbti/result/share/8.png',
+    downloadImage: '/riderly-mbti/result/download/8.png'
   },
   '1000': {
     name: '루트 마스터',
@@ -107,7 +116,8 @@ export const resultTypes: Record<string, ResultInfo> = {
       '단체 주행 시 배려심 깊은 스타일',
     ],
     image: '/riderly-mbti/result/9.png',
-    ogThumbnailImage: '/riderly-mbti/result/share/9.png'
+    ogThumbnailImage: '/riderly-mbti/result/share/9.png',
+    downloadImage: '/riderly-mbti/result/download/9.png'
   },
   '1001': {
     name: '풍경 감상가',
@@ -118,7 +128,8 @@ export const resultTypes: Record<string, ResultInfo> = {
       '조용한 분위기를 선호',
     ],
     image: '/riderly-mbti/result/10.png',
-    ogThumbnailImage: '/riderly-mbti/result/share/10.png'
+    ogThumbnailImage: '/riderly-mbti/result/share/10.png',
+    downloadImage: '/riderly-mbti/result/download/10.png'
   },
   '1010': {
     name: '감성 유랑객',
@@ -129,7 +140,8 @@ export const resultTypes: Record<string, ResultInfo> = {
       '감성을 나누는 따뜻한 스타일',
     ],
     image: '/riderly-mbti/result/11.png',
-    ogThumbnailImage: '/riderly-mbti/result/share/11.png'
+    ogThumbnailImage: '/riderly-mbti/result/share/11.png',
+    downloadImage: '/riderly-mbti/result/download/11.png'
   },
   '1011': {
     name: '길 위의 철학자',
@@ -140,7 +152,8 @@ export const resultTypes: Record<string, ResultInfo> = {
       '말 없이 풍경과 교감',
     ],
     image: '/riderly-mbti/result/12.png',
-    ogThumbnailImage: '/riderly-mbti/result/share/12.png'
+    ogThumbnailImage: '/riderly-mbti/result/share/12.png',
+    downloadImage: '/riderly-mbti/result/download/12.png'
   },
   '1100': {
     name: '다양한 길잡이',
@@ -151,7 +164,8 @@ export const resultTypes: Record<string, ResultInfo> = {
       '모두를 잘 챙기는 리더 스타일',
     ],
     image: '/riderly-mbti/result/13.png',
-    ogThumbnailImage: '/riderly-mbti/result/share/13.png'
+    ogThumbnailImage: '/riderly-mbti/result/share/13.png',
+    downloadImage: '/riderly-mbti/result/download/13.png'
   },
   '1101': {
     name: '로드 매니저',
@@ -162,7 +176,8 @@ export const resultTypes: Record<string, ResultInfo> = {
       '조용히 팀을 지원하는 조율자',
     ],
     image: '/riderly-mbti/result/14.png',
-    ogThumbnailImage: '/riderly-mbti/result/share/14.png'
+    ogThumbnailImage: '/riderly-mbti/result/share/14.png',
+    downloadImage: '/riderly-mbti/result/download/14.png'
   },
   '1110': {
     name: '유쾌한 탐험대장',
@@ -173,7 +188,8 @@ export const resultTypes: Record<string, ResultInfo> = {
       '즐거운 라이딩을 함께 만들기',
     ],
     image: '/riderly-mbti/result/15.png',
-    ogThumbnailImage: '/riderly-mbti/result/share/15.png'
+    ogThumbnailImage: '/riderly-mbti/result/share/15.png',
+    downloadImage: '/riderly-mbti/result/download/15.png'
   },
   '1111': {
     name: '평화로운 동행자',
@@ -184,6 +200,7 @@ export const resultTypes: Record<string, ResultInfo> = {
       '분위기에 자연스럽게 녹아듦',
     ],
     image: '/riderly-mbti/result/16.png',
-    ogThumbnailImage: '/riderly-mbti/result/share/16.png'
+    ogThumbnailImage: '/riderly-mbti/result/share/16.png',
+    downloadImage: '/riderly-mbti/result/download/16.png'
   },
 };
