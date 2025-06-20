@@ -1,4 +1,5 @@
 import StyledComponentsRegistry from "../lib/registry";
+import {GoogleAnalytics} from '@next/third-parties/google';
 import { Noto_Sans_KR } from 'next/font/google';
 import "./globals.css";
 
@@ -12,6 +13,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={notoSansKr.className} style={{ overflow: "hidden" }}>
+        <GoogleAnalytics gaId="G-3LM2DF1EZW"/>
         <StyledComponentsRegistry>
           {children}
         </StyledComponentsRegistry>
