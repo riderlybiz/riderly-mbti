@@ -113,13 +113,13 @@ export default function Result({ type }: { type: string }) {
             <ShareButton onClick={onShare}>친구에게 공유하기</ShareButton>
           </Content>
         </Card>
+        <a href="https://www.instagram.com/riderly_official/" target="_blank" rel="noopener noreferrer">
+          <Image src="/riderly-mbti/images/instagram.png" alt='Plus' width={26} height={26} />
+        </a>
         <Logo>
           <img src="/riderly-mbti/logo.png" alt="Riderly Logo" />
           RIDERLY
         </Logo>
-        <a href="https://www.instagram.com/riderly_official/" target="_blank" rel="noopener noreferrer">
-          <Image src="/riderly-mbti/images/instagram.png" alt='Plus' width={26} height={26} />
-        </a>
       </Bg>
     </ResultWrap>
   );
