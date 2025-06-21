@@ -22,6 +22,7 @@ import {
   Divider,
   Logo
 } from '@/styles/ResultStyled';
+import Image from 'next/image';
 import { doc, setDoc } from 'firebase/firestore'
 import { db } from '@/lib/firebase'
 import { v4 as uuidv4 } from 'uuid';
@@ -116,6 +117,9 @@ export default function Result({ type }: { type: string }) {
           <img src="/riderly-mbti/logo.png" alt="Riderly Logo" />
           RIDERLY
         </Logo>
+        <a href="https://www.instagram.com/riderly_official/" target="_blank" rel="noopener noreferrer">
+          <Image src="/riderly-mbti/images/instagram.png" alt='Plus' width={26} height={26} />
+        </a>
       </Bg>
     </ResultWrap>
   );

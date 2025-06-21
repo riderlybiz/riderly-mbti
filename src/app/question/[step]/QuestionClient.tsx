@@ -20,6 +20,7 @@ import {
   OptionBtn,
   Logo
 } from '@/styles/QuestionStyled';
+import Image from 'next/image';
 
 export default function QuestionClient({ step, question }) {
   const total = 12; // 총 질문 수
@@ -60,6 +61,9 @@ export default function QuestionClient({ step, question }) {
           <img src="/riderly-mbti/logo.png" alt="Riderly Logo" />
           RIDERLY
         </Logo>
+        <a href="https://www.instagram.com/riderly_official/" target="_blank" rel="noopener noreferrer">
+          <Image src="/riderly-mbti/images/instagram.png" alt='Plus' width={26} height={26} />
+        </a>
       </Bg>
     </QuestionWrap>
   );
